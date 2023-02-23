@@ -1,7 +1,86 @@
+/* DEBUG */ 
+
+
 /* GENERAL */
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: black;
+}
+
+main {
+  height: calc(100vh - 170px);
+  overflow: auto;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+img {
+  object-fit: cover;
+  max-width: 100%;
+}
+
+/* HEADER  */
+
+header {
+  height: 70px;
+  padding: 10px;
+  text-align: right;
+}
+
+header span {
+  font-size: .7rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 5px;
+  background-color: #4a4a4a;
+  margin-left: 3px;
+  border-radius: 5px;
+}
+
+/* MAIN */
+
+main {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.image {
+  position: relative;
+  width: 250px;
+  height: 200px;
+  padding: 10px 5px;
+}
+
+.image .user-tag {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  font-size: .7rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 5px;
+  background-color: rgba(0,0,0,0.3);
+}
+
+/* FOOTER */
+
+footer {
+  height: 100px;
+  background-color: #222222;
 }
